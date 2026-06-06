@@ -222,8 +222,8 @@ export default function App() {
         <div>
           <div className="bg-gradient-to-br from-[#04342C] to-[#0F6E56] py-16 md:py-24 px-4 md:px-8 text-center">
             <div className="text-5xl md:text-6xl mb-4">🏷️✨</div>
-            <h1 className="text-2xl md:text-4xl font-black mb-3 text-[#9FE1CB]">Stiker Kamu, Cerita Kamu</h1>
-            <p className="text-base md:text-lg mb-8 text-[#E1F5EE] max-w-lg mx-auto">Stiker custom & siap jual berkualitas tinggi. Ekspresikan dirimu!</p>
+            <h1 className="text-2xl md:text-4xl font-black mb-3 text-[#9FE1CB]">Make your own stickers</h1>
+            <p className="text-base md:text-lg mb-8 text-[#E1F5EE] max-w-lg mx-auto">Custom stickers and best seller stickers design!</p>
             <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
               <button onClick={() => setHalaman('shop')} className="bg-[#9FE1CB] text-[#04342C] border-none rounded-full px-8 py-3 font-extrabold text-base cursor-pointer w-full sm:w-auto">🛍️ Lihat Shop</button>
               <button onClick={() => setHalaman('custom')} className="bg-transparent text-[#9FE1CB] border-2 border-[#9FE1CB] rounded-full px-8 py-3 font-extrabold text-base cursor-pointer w-full sm:w-auto">🎨 Custom Order</button>
@@ -231,7 +231,7 @@ export default function App() {
           </div>
 
           <div className="py-12 px-4 md:px-8 max-w-4xl mx-auto">
-            <h2 className="text-center text-2xl font-black mb-8 text-[#04342C]">📦 Paket Terbaik Kami</h2>
+            <h2 className="text-center text-2xl font-black mb-8 text-[#04342C]">📦 Paket Kikir</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {paket.map(p => (
                 <div key={p.id} className="bg-white rounded-2xl p-6 md:p-8 text-center shadow-md border-2 border-[#9FE1CB]">
@@ -249,10 +249,10 @@ export default function App() {
             <h2 className="text-2xl font-black mb-8 text-[#04342C]">💎 Kenapa StikerKu?</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
               {[
-                { icon: '🎨', judul: 'Full Custom', teks: 'Desain sesuai keinginanmu' },
-                { icon: '⚡', judul: 'Proses Cepat', teks: 'Selesai 2-3 hari kerja' },
-                { icon: '💎', judul: 'Kualitas Premium', teks: 'Bahan tahan air & awet' },
-                { icon: '💸', judul: 'Harga Terjangkau', teks: 'Mulai Rp 9.500/pcs' },
+                { icon: '🎨', judul: 'Full Custom', teks: 'Bisa desain sendiri cikk!!' },
+                { icon: '⚡', judul: 'Proses Cepat', teks: 'kerjaan kite cepet' },
+                { icon: '💎', judul: 'Kualitas Premium', teks: 'Bahan premium dah pokoknya' },
+                { icon: '💸', judul: 'Harga Kikir', teks: 'Mulai Rp 9.500/pcs' },
               ].map((item, i) => (
                 <div key={i} className="bg-white rounded-2xl p-4 md:p-6 shadow-sm border border-[#9FE1CB]">
                   <div className="text-3xl md:text-4xl mb-2">{item.icon}</div>
@@ -268,8 +268,8 @@ export default function App() {
       {/* ======= SHOP ======= */}
       {halaman === 'shop' && (
         <div className="py-8 px-4 md:px-8 max-w-6xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-black mb-2 text-[#04342C]">🛍️ Stiker Siap Jual</h2>
-          <p className="text-[#0F6E56] mb-6 text-sm md:text-base">Koleksi stiker premium siap pakai. Harga satuan Rp 9.500</p>
+          <h2 className="text-2xl md:text-3xl font-black mb-2 text-[#04342C]">🛍️ Best seller nihh</h2>
+          <p className="text-[#0F6E56] mb-6 text-sm md:text-base">Gas lahh beli gausah banyak cacicu</p>
 
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 md:gap-5 mb-12">
             {stikerReady.map(stiker => (
@@ -290,7 +290,7 @@ export default function App() {
             ))}
           </div>
 
-          <h2 className="text-xl md:text-2xl font-black mb-4 text-[#04342C]">📦 Paket Hemat</h2>
+          <h2 className="text-xl md:text-2xl font-black mb-4 text-[#04342C]">📦 Paket Kikir</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
             {paket.map(p => (
               <div key={p.id} className="bg-white rounded-2xl p-5 md:p-7 flex items-center gap-4 md:gap-5 shadow-md border border-[#9FE1CB]">
@@ -311,20 +311,20 @@ export default function App() {
       {halaman === 'custom' && (
         <div className="py-8 px-4 md:px-8 max-w-2xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-black mb-2 text-[#04342C]">🎨 Custom Order</h2>
-          <p className="text-[#0F6E56] mb-6 text-sm md:text-base">Desain stiker impianmu sendiri! Isi form di bawah ini.</p>
+          <p className="text-[#0F6E56] mb-6 text-sm md:text-base">Desain sendiri stiker lau cikk!!</p>
 
           {submitSukses ? (
             <div className="bg-[#E1F5EE] border-2 border-[#1D9E75] rounded-2xl p-8 md:p-12 text-center">
               <div className="text-5xl md:text-6xl mb-4">🎉</div>
               <h3 className="font-black text-xl md:text-2xl text-[#04342C] mb-2">Pesanan Diterima!</h3>
-              <p className="text-[#0F6E56] mb-6 text-sm md:text-base">Tim kami akan segera menghubungi kamu via WhatsApp.</p>
+              <p className="text-[#0F6E56] mb-6 text-sm md:text-base">Tim sticker akan segera menghubungi mu</p>
               <button onClick={() => setSubmitSukses(false)} className="bg-[#04342C] text-[#9FE1CB] border-none rounded-full px-7 py-3 font-extrabold cursor-pointer">Buat Order Lagi</button>
             </div>
           ) : (
             <form onSubmit={handleSubmitCustom} className="bg-white rounded-2xl p-5 md:p-8 shadow-lg border border-[#9FE1CB]">
               <div className="mb-4">
                 <label className="block font-bold mb-1 text-[#04342C] text-sm">Nama Lengkap *</label>
-                <input name="nama" value={formCustom.nama} onChange={handleChangeCustom} placeholder="Contoh: Budi Santoso"
+                <input name="nama" value={formCustom.nama} onChange={handleChangeCustom} placeholder="Contoh: King Nassir"
                   className={`w-full px-4 py-3 rounded-xl border-2 text-sm outline-none ${errorCustom.nama ? 'border-red-400' : 'border-[#9FE1CB]'}`} />
                 {errorCustom.nama && <p className="text-red-400 text-xs mt-1">⚠️ {errorCustom.nama}</p>}
               </div>
@@ -386,7 +386,7 @@ export default function App() {
               <div className="mb-6">
                 <label className="block font-bold mb-1 text-[#04342C] text-sm">Deskripsi Stiker *</label>
                 <textarea name="deskripsi" value={formCustom.deskripsi} onChange={handleChangeCustom}
-                  placeholder="Ceritakan stiker yang kamu mau. Contoh: Stiker kucing lucu background pink, ukuran 5x5cm..."
+                  placeholder="Lau mau stiker yang gimana, jelasin aje di sini tapi jelasin yang bener, awas kalo ngawur"
                   rows={4}
                   className={`w-full px-4 py-3 rounded-xl border-2 text-sm outline-none resize-y ${errorCustom.deskripsi ? 'border-red-400' : 'border-[#9FE1CB]'}`}
                   style={{ fontFamily: 'Nunito, sans-serif' }} />
@@ -410,8 +410,8 @@ export default function App() {
             <div className="max-w-sm mx-auto mt-10 bg-white rounded-2xl p-6 md:p-8 shadow-lg border border-[#9FE1CB]">
               <div className="text-center mb-6">
                 <div className="text-5xl mb-2">🔒</div>
-                <h2 className="text-2xl font-black text-[#04342C]">Admin Panel</h2>
-                <p className="text-[#0F6E56] text-sm mt-1">Masukkan password untuk melanjutkan</p>
+                <h2 className="text-2xl font-black text-[#04342C]">Khusus Admin</h2>
+                <p className="text-[#0F6E56] text-sm mt-1">Password nya Wok</p>
               </div>
               <input type="password" value={adminPass}
                 onChange={(e) => setAdminPass(e.target.value)}
@@ -421,7 +421,7 @@ export default function App() {
                     else setAdminError('Password salah!')
                   }
                 }}
-                placeholder="Masukkan password..."
+                placeholder="Mana password wok..."
                 className="w-full px-4 py-3 rounded-xl border-2 border-[#9FE1CB] text-sm outline-none mb-3" />
               {adminError && <p className="text-red-400 text-xs mb-3">⚠️ {adminError}</p>}
               <button onClick={() => {
@@ -436,7 +436,7 @@ export default function App() {
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 mb-6">
                 <div>
                   <h2 className="text-2xl md:text-3xl font-black text-[#04342C]">📋 Admin Panel</h2>
-                  <p className="text-[#0F6E56] text-sm">Total order masuk: <b>{orders.length}</b></p>
+                  <p className="text-[#0F6E56] text-sm">Nih orderan nya min: <b>{orders.length}</b></p>
                 </div>
                 <div className="flex gap-3">
                   {orders.length > 0 && (
@@ -455,7 +455,7 @@ export default function App() {
               {orders.length === 0 ? (
                 <div className="text-center py-16 bg-white rounded-2xl border border-[#9FE1CB]">
                   <div className="text-5xl mb-3">📭</div>
-                  <p className="text-[#0F6E56] font-bold">Belum ada order masuk</p>
+                  <p className="text-[#0F6E56] font-bold">Sabar, Masih kosong min</p>
                 </div>
               ) : (
                 <div className="flex flex-col gap-4">
@@ -516,8 +516,8 @@ export default function App() {
       {/* FOOTER */}
       <footer className="bg-[#04342C] text-[#9FE1CB] text-center py-8 mt-16 px-4">
         <div className="text-xl md:text-2xl font-extrabold mb-2">🏷️ StikerKikir</div>
-        <p className="text-sm opacity-70">© 2024 StikerKikir. Semua hak dilindungi.</p>
-        <p className="text-xs opacity-50 mt-1">📱 WhatsApp: 0812-3456-7890</p>
+        <p className="text-sm opacity-70">© 2024 StikerKikir. Semua hak dilindungi wowok.</p>
+       
       </footer>
 
     </div>
