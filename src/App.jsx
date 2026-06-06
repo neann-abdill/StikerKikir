@@ -246,7 +246,7 @@ export default function App() {
           </div>
 
           <div className="bg-[#E1F5EE] py-12 px-4 md:px-8 text-center">
-            <h2 className="text-2xl font-black mb-8 text-[#04342C]">💎 Kenapa StikerKu?</h2>
+            <h2 className="text-2xl font-black mb-8 text-[#04342C]">💎 Kenapa StikerKikir?</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto">
               {[
                 { icon: '🎨', judul: 'Full Custom', teks: 'Bisa desain sendiri cikk!!' },
